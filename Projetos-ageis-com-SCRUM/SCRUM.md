@@ -47,7 +47,7 @@ Framework de gerenciamento de projeto ágil com equipes pequenas e multidiscipli
 -Uma sprint pode ser cancelada pelo PO, caso ele veja a necessidade.
 
 ### Daily Meeting
--Participação de toda a equipe, não sendo obrigatório o PO;  
+-Participação de toda a equipe, não sendo obrigatório o PO e o SM;  
 -TimeBox de 15 minutos;  
 -Sempre no mesmo horário e local, de preferência, realizada de pé;  
 -Reunião para se discutir o que foi feito no dia anterior, o que será feito hoje, e se existem impedimentos;  
@@ -55,15 +55,24 @@ Framework de gerenciamento de projeto ágil com equipes pequenas e multidiscipli
 
 ### Review da sprint
 -Time dev apresenta ao PO o trabalho realizado na sprint;  
+-Objetivo: verificar se a demanda agrega valor ao negocio;  
 -TimeBox de 4horas;  
 -PO pode levar o stackholder.
 
 ### Retrospectiva da sprint
--Reunião da equipe de dev's, não sendo obrigatório o PO e o SM;  
--Apontamento dos erros da sprint;  
+-Reunião da equipe de dev's e o SM, não sendo obrigatório o PO;  
+-Apontamento dos erros e das melhorias da sprint;  
 -TimeBox de 3 horas em uma sprint de 30 dias;  
 -Necessário a transparência de todos.
 
 ## Release Planning
 -Liberação ou lançamento do software, por inteiro ou por partes;  
 -Pode ser de múltipla squads ou de projeto.
+
+## Refinamento
+-Cerimonia não oficial do SCRUM;  
+-Discussão sobre a próxima sprint;  
+-Aumentar o entendimento da demanda e a qualidade da entrega;  
+-Estoria já deve estar escrita nesse momento;  
+-Necessário todo o time;  
+-Acontece antes da planning.
