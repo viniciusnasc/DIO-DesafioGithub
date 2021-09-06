@@ -1,78 +1,30 @@
-# Projetos ágeis com SCRUM
+# Comandos SQL Server
 
-# O SCRUM
+### Criar tabela:
+CREATE TABLE [Nome da tabela](
+[Nome da coluna] [Tipo de variavel] NOT NULL,
+[Nome da coluna] [Tipo de variavel] NULL,
+)
 
-### SCRUM
-Framework de gerenciamento de projeto ágil com equipes pequenas e multidisciplinares
+### Adicionar chave primaria:
+ALTER TABLE [Nome da tabela] ADD CONSTRAINT [Nome da chave] PRIMARY KEY ([Nome da coluna]);
+**Obs.: Para o nome da chave, é utilizado PK_[NomeDaTabela]**
+**Obs.: A chave primaria pode ser composta, necessitando colocar uma virgula para separar as colunas**
 
-### Pilares do SCRUM
--Transparencia  
--Adaptação  
--Inspeção
+### Adicionar chave estrangeira:
+ALTER TABLE [Nome da tabela] ADD CONSTRAINT [Nome da chave] FOREIGN KEY([Nome da coluna])
+REFERENCES [Nome da tabela de referencia] ([Nome da coluna da tabela de referencia])
+**Obs.: Para o nome da chave, é utilizado FK_[NomeDaTabela]_[NomeDaTabelaDeReferencia]**
 
-### Por que adotar o SCRUM?
--Desenvolvimento e entrega em partes menores;  
--Constante feedback do cliente;  
--Melhor gerenciamento dos riscos;  
--Comprometimento, motivação e transparencia da equipe;  
--Priorização do backlog;  
--Envolvimento dos usuários durante o ciclo;  
--Melhoria continua.
+### Adicionar valor padrão:
+Em uma coluna com valor booleano, é possível colocar um valor padrão caso não informado, 0 para false e 1 para true:
+ALTER TABLE [Nome da tabela] ADD CONSTRAINT [Nome da chave] DEFAULT ([valor booleano]) FOR [Nome da coluna]
 
-## Time SCRUM
-### PO - Product Owner
--Representante da área de negocios;  
--Define o Product Backlog;  
--Prioriza as funcionalidades de acordo com o valor do negocio(MVP);  
--Garante que os DEV's entendam o projeto.
+### Comando GO
+Serve para mudar seção
 
-### SM - SCRUM Master
--Garante o uso correto do SCRUM;  
--Facilitador da equipe;  
--Auxilia o PO nas estimativas e no planejamento do Backlog;  
--Auxilia a equipe e remove impedimentos;  
--Treina a equipe em autogerenciamento e interdisciplinaridade.
-
-### DEV's 
--Possuem habilidades para desenvolver, testar, criar e desenhar tudo que for necessário para a entrega do software.
-
-## Cerimonias SCRUM
-### Planejamento da sprint
--Participação de todo o time;  
--Definição a duração das sprints do projeto;  
--TimeBox de 8h em sprint's de 30 dias;  
--PO: Nas quatro primeiras horas é explicado ao time o que é desejado naquela sprint;  
--Dev's: Nas últimas 4h é realizado o planejamento de o que será feito durante e seus prazos, de preferencia, o PO não participa nessa parte do planejamento;  
--Todos devem sair sem dúvidas;  
--Uma sprint pode ser cancelada pelo PO, caso ele veja a necessidade.
-
-### Daily Meeting
--Participação de toda a equipe, não sendo obrigatório o PO e o SM;  
--TimeBox de 15 minutos;  
--Sempre no mesmo horário e local, de preferência, realizada de pé;  
--Reunião para se discutir o que foi feito no dia anterior, o que será feito hoje, e se existem impedimentos;  
--Atualização do KANBAM - caso exista.
-
-### Review da sprint
--Time dev apresenta ao PO o trabalho realizado na sprint;  
--Objetivo: verificar se a demanda agrega valor ao negocio;  
--TimeBox de 4horas;  
--PO pode levar o stackholder.
-
-### Retrospectiva da sprint
--Reunião da equipe de dev's e o SM, não sendo obrigatório o PO;  
--Apontamento dos erros e das melhorias da sprint;  
--TimeBox de 3 horas em uma sprint de 30 dias;  
--Necessário a transparência de todos.
-
-## Release Planning
--Liberação ou lançamento do software, por inteiro ou por partes;  
--Pode ser de múltipla squads ou de projeto.
-
-## Refinamento
--Cerimonia não oficial do SCRUM;  
--Discussão sobre a próxima sprint;  
--Aumentar o entendimento da demanda e a qualidade da entrega;  
--Estoria já deve estar escrita nesse momento;  
--Necessário todo o time;  
--Acontece antes da planning.
+### Tipos de variáveis:
+int = inteiros;  
+float = variaveis flutuantes;  
+varchar([Quantidade de caracteres]) = strings;  
+bit = valor booleano;  
