@@ -1,5 +1,9 @@
 # Comandos GIT
 
+git init => inicia o versionamento local  
+
+git remote add origin [link do repositorio] => coloca o projeto em um repositorio vazio  
+
 git clone [link do repositorio] => clonar repositorio;
 
 cd [nome da pasta] => entrar em uma pasta;
